@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome --no-exit",
+    "postcypress:run": "node ./cypress/support/report.js",
+    "cucumber": "cypress run --browser chrome --no-exit -e"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/Steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "reports/json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cypress": "6.8.0",
+    "cypress-cucumber-preprocessor": "4.0.3",
+    "cypress-image-snapshot": "^4.0.1",
+    "cypress-multi-reporters": "1.4.0",
+    "mocha": "8.3.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "dependencies": {
+    "save-dev": "0.0.1-security"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "baseUrl": "http://demo.automationtesting.in/Register.html",
+    "baseAPI":"https://api.mlab.com/api/1/databases/userdetails/collections/newtable?apiKey=YEX0M2QMPd7JWJw_ipMB3a5gDddt4B_X",
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "defaultCommandTimeout": 40000,
+    "video": true,
+    "videoCompression": 32,
+    "videoUploadOnPasses": true,
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "./reports/screenshots"
+
+}
